@@ -1,11 +1,20 @@
 {
   "name": "virtual-dom_achieve",
+  "version": "0.0.1",
   "description": "多种虚拟 dom 实现",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "server": "min-http ./ -p 8888"
+  },
+  "license": "ISC",
   "devDependencies": {
     "rollup": "^2.28.2",
     "rollup-plugin-babel": "^4.4.0",
     "babel-core": "^6.26.3",
+    "@babel/core": "^7.11.6",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "min-http": "^1.0.8"
   }
 }
